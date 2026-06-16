@@ -401,7 +401,7 @@ css
     width:25px;
     height:25px;
     border-radius:50%;
-    border:1px solid #ddd;
+    border:1px solid #aaa;
     cursor: pointer;
     transition: .3s;
 }
@@ -530,4 +530,23 @@ css
     padding:20px;
     background:white;
     border-radius:20px;
+}
+
+.estampados{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap:4px;
+    margin:15px 0;
+    justify-items: center;
+}
+
+.estampados img{
+    width:150px;
+    max-width: 120px;
+    height:140px;
+    object-fit:cover;
+    border-radius:10px;
+    cursor:pointer;
+    border:2px solid #ddd;
+    transition:.3s;
 }
