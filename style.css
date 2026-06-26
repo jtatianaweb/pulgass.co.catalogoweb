@@ -425,6 +425,8 @@ css
 .azulnavy{background: #000080;}
 
 .estampados{
+    max-height: 350px;
+    overflow-y: auto;
     display:flex;
     justify-content:center;
     gap:8px;
