@@ -256,20 +256,44 @@ footer{
     }
 
     .productos{
-        width:95%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
         gap:20px;
     }
 
+    .producto{
+        width:350px;
+        margin: 0 auto;
+    }
+
     .producto img{
-        height:280px;
+        width: 78%;
+        height:220px;
+    }
+
+    .estampados img{
+        width:95px;
+        height:110px;
     }
 
     .producto h2{
-        font-size:1.2rem;
+        font-size:1.05rem;
     }
 
     .precio{
-        font-size:1.2rem;
+        font-size:1.05rem;
+    }
+
+    .producto p{
+        font-size:0.9rem;
+    }
+
+    .btn-comprar{
+        width:120px;
+        padding:10px 20px;
+        font-size:14px;
     }
 
 }
