@@ -143,6 +143,26 @@ header{
     font-size:1.3rem;
 }
 
+.miniatura{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.miniatura .agotado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(220, 53, 69, 0.9);
+    color: black;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
 /* FOOTER */
 
 footer{
