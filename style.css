@@ -406,13 +406,11 @@ css
     translateY(-8px);
 }
 
-.producto img{
-
-    width:80%;
-
+.producto > img{
+    width:100%;
     height:350px;
-
     object-fit:cover;
+    display:block;
 }
 
 .producto h2{
