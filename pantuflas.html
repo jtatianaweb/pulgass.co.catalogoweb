@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PANTUFLAS | PULGASS.CO</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ESTILOS EXCLUSIVOS PARA ESTA PÁGINA -->
+    <style>
+
+        /* Evita espacios innecesarios en la sección de productos */
+        .productos {
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+            align-items: start;
+        }
+
+        /* Reduce el tamaño de la tarjeta del producto */
+        .productos .producto {
+            padding: 20px !important;
+            margin: 0 auto !important;
+            height: auto !important;
+            min-height: 0 !important;
+            max-height: none !important;
+            box-sizing: border-box;
+            align-self: start;
+        }
+
+        /* Imagen principal */
+        .productos .producto > img {
+            display: block;
+            width: 180px;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto 10px !important;
+        }
+
+        /* Nombre del producto */
+        .productos .producto h2 {
+            margin-top: 8px !important;
+            margin-bottom: 8px !important;
+        }
+
+        /* Precio y descripción */
+        .productos .producto p {
+            margin-top: 8px !important;
+            margin-bottom: 8px !important;
+        }
+
+        /* Imágenes de los colores disponibles */
+        .productos .producto .estampados {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+            margin: 10px auto !important;
+            padding: 0 !important;
+        }
+
+        .productos .producto .estampados img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+            margin: 0 !important;
+            cursor: pointer;
+        }
+
+        /* Botón de compra */
+        .productos .producto .btn-comprar {
+            display: inline-block;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        /* Evita que el pie de página quede demasiado separado */
+        footer {
+            margin-top: 20px;
+        }
+
+        /* Ajustes para celulares */
+        @media (max-width: 600px) {
+
+            .productos {
+                padding: 15px 10px !important;
+            }
+
+            .productos .producto {
+                padding: 15px !important;
+                width: 100%;
+            }
+
+            .productos .producto > img {
+                width: 160px;
+            }
+
+            .productos .producto .estampados img {
+                width: 65px;
+                height: 65px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header-categoria">
+
+        <img src="img/logo/logo-Photoroom.png"
+             alt="Pulgass"
+             class="logo-categoria">
+
+        <h1>PANTUFLAS</h1>
+
+        <a href="index.html" class="volver">
+            ← Volver al inicio
+        </a>
+
+    </div>
+
+    <section class="productos">
+
+        <div class="producto">
+
+            <!-- Imagen principal -->
+            <img id="pantuflas"
+                 src="img/pantuflas/1.jpeg"
+                 alt="Pantufla tipo sandalia"
+                 loading="lazy">
+
+            <h2>PANTUFLA TIPO SANDALIA</h2>
+
+            <p class="precio">$40.000</p>
+
+            <!-- Colores disponibles -->
+            <div class="estampados">
+
+                <img src="img/pantuflas/1.jpeg"
+                     alt="Pantuflas color rosado"
+                     loading="lazy"
+                     onclick="cambiarColor('pantuflas','img/pantuflas/1.jpeg')">
+
+                <img src="img/pantuflas/2.jpeg"
+                     alt="Pantuflas color beige"
+                     loading="lazy"
+                     onclick="cambiarColor('pantuflas','img/pantuflas/2.jpeg')">
+
+                <img src="img/pantuflas/3.jpeg"
+                     alt="Pantuflas color azul"
+                     loading="lazy"
+                     onclick="cambiarColor('pantuflas','img/pantuflas/3.jpeg')">
+
+            </div>
+
+            <p>3 COLORES DIVINOS</p>
+
+            <p>TALLAJE REDUCIDO</p>
+
+            <p>36-37 · 38-39 · 40-41</p>
+
+            <a href="https://wa.me/573223375265?text=Hola,%20me%20interesa%20la%20pantufla%20tipo%20sandalia"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-comprar">
+                Comprar
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 PULGASS.CO</p>
+
+    </footer>
+
+</body>
+
+</html>
